@@ -1,5 +1,5 @@
-# <center>sage</center>
-#### <center>Web Development Project on Citizen Science.<br>Ankit | Anas | Subrat</center>
+# sage
+#### Web Development Project on Citizen Science.<br>Ankit | Anas | Subrat
 
 ## Objective:
 To create a web application which can perform following important task:

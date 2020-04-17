@@ -17,6 +17,11 @@ To create a web application which can perform following important task:
 - Backend: Django, Djangorest
 - Database:
 
+## Folder Structure:
+- sage
+     - frontend
+     - backend
+
 ## Frontend:
 1. **Logo and Name**
 2. **Homepage**: 

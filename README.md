@@ -49,6 +49,7 @@ Here are API points and their functions.
  
 ## Database Schema(PROPOSED)
 Two databases are needed. Consider the example where user has to tag objects in images, in this case
+
 0. PHOTO_TABLE = {primary_key = photo_id, image}
 1. FINAL_TABLE = {primary_key = image_id,tags}
 2. TAGGED_TABLE = {primary_key = image_id, tagged_or_not}
@@ -60,6 +61,7 @@ Two databases are needed. Consider the example where user has to tag objects in 
      {primary_key = user_id,other attributes - no_tagged, good_tagged,bad_tagged,Rank..etc}
 5. RANKING_TABLE - {primary_key: user_id,rank}
 ## How the database works     
+
 - Initally all photos are inserted in the TAGGED_TABLE with tagged(attribute) as false.
 - The user is shown photos from the TAGGED_TABLE images that have tagged(attribute) as false.
 - After the user tags, the photo_id along with the tags is inserted into the TEMP_IMAGE_TABLE with verified(attribute) as false.
@@ -70,6 +72,7 @@ Two databases are needed. Consider the example where user has to tag objects in 
 - After verification in the previous step, if the tagging was correct, the user statistics is updated in the USER_TABLE.
 - This process is performed everytime a user requests an image
 ## Table Authorisation
+
 User will not have access to the images he/she tags after they submit it.(This feature can be changed)
 User will have access only to the RANKING_TABLE and USER_TABLE.
 Admin has access to all tables.

@@ -76,3 +76,4 @@ Two databases are needed. Consider the example where user has to tag objects in 
 User will not have access to the images he/she tags after they submit it.(This feature can be changed)
 User will have access only to the RANKING_TABLE and USER_TABLE.
 Admin has access to all tables.
+

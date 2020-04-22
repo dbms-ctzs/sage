@@ -1,8 +1,8 @@
 # sage
 #### Web Development Project on Citizen Science.<br>Ankit | Anas | Subrat
 
-## Instruction
-0. Clone this repo using git clone.
+## Instruction(towards becoming pseudo-professional)
+0. Clone this repo using git clone better to clone it to your own repo and give pull requests.
 
 1. Install pipenv which will be used later when deplyoing. pipenv creates a pipfile which locks dependencies, used for deplyment in webserver.
 ```console

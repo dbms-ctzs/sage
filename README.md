@@ -1,26 +1,42 @@
 # sage
 #### Web Development Project on Citizen Science.<br>Ankit | Anas | Subrat
 
+## Instruction
+0. Clone this repo using git clone.
+
+1. Install pipenv which will be used later when deplyoing. pipenv creates a pipfile which locks dependencies, used for deplyment in webserver.
+```console
+pip3 install pipenv
+```
+2. Run pipenv: It will take to it's shell
+```console
+pipenv shell
+```
+3. Install dependencies: Pipfile has been updated sp run following:
+```console
+pipenv install
+```
+4. Plese inform the team when you push something here.
+
+5. Use WIKI tab to share any detailed information having images/tables or it can be shared as details.pdf/details.doc etc
+
 ## Objective:
 To create a web application which can perform following important task:
 - User and Admin login
 - Show images from backend database to logged in  User for **image tagging.**
 - Logged in Admin user can accept the image tags validity and upload new images.
 
-## Team Work:
-- dbms-ctzs/sage will be our stable *mainline* repository.
-- Please fork this repository to your own github account and work on the features you like.
-- Give push to *mainline* when you feel some feature is complete. Inform everybody on chat, so that everyone can sync to it.
-
 ## Tools:
 - Frontend: HTML, CSS, Javascript, Bootstrap.
-- Backend: Django, Djangorest
-- Database:
+- Backend: Django
+- Database: Sqllite
 
 ## Folder Structure:
 - sage
-     - frontend
-     - backend
+     - sage //project info file
+     - manage.py
+     - account //authentication
+     - dashboard //dashboard
 
 ## Frontend:
 1. **Logo and Name**
@@ -77,3 +93,13 @@ User will not have access to the images he/she tags after they submit it.(This f
 User will have access only to the RANKING_TABLE and USER_TABLE.
 Admin has access to all tables.
 
+## TODO
+**(no need to work on authorization to each pages for now, login is only authenticated for now)**
+**(use dummy image and dummy data when dbms query is not involved)**
+1. User Login and registration API (use simple forms for html templates- will be made beutiful later)
+2. Create approproate tables-> models.py
+3. User dashboard: show images and questions(no need to query database just use dummy image and data), decide whether to use AJAX call to serve image or server side generation of each page.
+4. Handle image query from database(fetch image from database)(only database- it will be linked to above later)
+5. User profile: show user profile to edit(show and query both)
+6. Ranking: Show ranking of all users(no need to query database- use dummy data)
+7. Query rank of user from database.

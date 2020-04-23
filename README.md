@@ -96,10 +96,13 @@ Admin has access to all tables.
 ## TODO
 **(no need to work on authorization to each pages for now, login is only authenticated for now)**
 **(use dummy image and dummy data when dbms query is not involved)**
-1. User Login and registration API (use simple forms for html templates- will be made beutiful later)
+1. User Login and registration API (use simple forms for html templates- will be made beautiful later)
 2. Create approproate tables-> models.py
 3. User dashboard: show images and questions(no need to query database just use dummy image and data), decide whether to use AJAX call to serve image or server side generation of each page.
 4. Handle image query from database(fetch image from database)(only database- it will be linked to above later)
 5. User profile: show user profile to edit(show and query both)
 6. Ranking: Show ranking of all users(no need to query database- use dummy data)
 7. Query rank of user from database.
+8. Image upload API(upload a dummy image and store it in database)
+9. Notification API
+10. Authorization to developed APIs

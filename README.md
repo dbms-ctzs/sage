@@ -2,7 +2,7 @@
 #### Web Development Project on Citizen Science.<br>Ankit | Anas | Subrat
 
 ## Instruction(towards becoming pseudo-professional)
-0. Clone this repo using git clone better to clone it to your own repo and give pull requests.
+0. Clone this repo using git clone and push updates at the end of a day..
 
 1. Install pipenv which will be used later when deplyoing. pipenv creates a pipfile which locks dependencies, used for deplyment in webserver.
 ```console
@@ -16,9 +16,9 @@ pipenv shell
 ```console
 pipenv install
 ```
-4. Plese inform the team when you push something here.
+4. Inform other for any push. If on slack you will receive automatic update
 
-5. Use WIKI tab to share any detailed information having images/tables or it can be shared as details.pdf/details.doc etc
+5. Use files eg details.pdf/details.doc etc to convey detailed information having tables/images.
 
 ## Objective:
 To create a web application which can perform following important task:

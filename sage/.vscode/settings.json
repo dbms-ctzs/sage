@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/home/subrat/.local/share/virtualenvs/sage-spaOWDLd/bin/python",
+    "python.formatting.provider": "black"
+}

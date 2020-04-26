@@ -4,7 +4,7 @@
 ## Instruction(towards becoming pseudo-professional)
 0. Clone this repo using git clone and push updates at the end of a day..
 
-1. Install pipenv which will be used later when deplyoing. pipenv creates a pipfile which locks dependencies, used for deplyment in webserver.
+1. Install pipenv which will be used later when deployoing. pipenv creates a pipfile which locks dependencies, used for deployment in webserver.
 ```console
 pip3 install pipenv
 ```
@@ -29,7 +29,7 @@ To create a web application which can perform following important task:
 ## Tools:
 - Frontend: HTML, CSS, Javascript, Bootstrap.
 - Backend: Django
-- Database: Sqllite
+- Database: Sqlite
 
 ## Folder Structure:
 - sage

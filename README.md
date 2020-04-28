@@ -23,8 +23,8 @@ pipenv install
 ## Objective:
 To create a web application which can perform following important task:
 - User and Admin login
-- Show images from backend database to logged in  User for **image tagging.**
-- Logged in Admin user can accept the image tags validity and upload new images.
+- Show news text from backend database to logged in  User for classifying it as Fake or Real
+- API point to check validity of news
 
 ## Tools:
 - Frontend: HTML, CSS, Javascript, Bootstrap.
@@ -33,7 +33,7 @@ To create a web application which can perform following important task:
 
 ## Folder Structure:
 - sage
-     - sage //project info file
+     - ctzs //project info file
      - manage.py
      - account //authentication
      - dashboard //dashboard
@@ -47,14 +47,11 @@ To create a web application which can perform following important task:
      - Tutorials of how to help
      - About us
 3. **Users Dashboard:**  
-    - Show image for image tagging.
+    - Show news for classifying.
     - Number of Submissions.
     - User profile Details.
     - User Ranking
-4. **Admins Dashboard:**
-    - Profile Details
-    - Approval of Image tags.
-    - Upload new images.
+
 
 ## Backend:
 Here are API points and their functions.
@@ -98,11 +95,6 @@ Admin has access to all tables.
 **(use dummy image and dummy data when dbms query is not involved)**
 1. User Login and registration API (use simple forms for html templates- will be made beautiful later)
 2. Create approproate tables-> models.py
-3. User dashboard: show images and questions(no need to query database just use dummy image and data), decide whether to use AJAX call to serve image or server side generation of each page.
-4. Handle image query from database(fetch image from database)(only database- it will be linked to above later)
-5. User profile: show user profile to edit(show and query both)
-6. Ranking: Show ranking of all users(no need to query database- use dummy data)
-7. Query rank of user from database.
-8. Image upload API(upload a dummy image and store it in database)
-9. Notification API
-10. Authorization to developed APIs
+3. User dashboard: show news and and take response of Fake/Real with some remarks. Use AJAX call to fetch news from server and show it to the user.
+4. User Ranking profile.
+5. User profile

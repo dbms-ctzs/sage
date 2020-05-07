@@ -27,7 +27,7 @@ pipenv install
   and install python imaging library Pillow in terminal by 
   ```console
     pip install Pillow
-    ```
+  ```
     
 7. To use social authentication for login, in terminal, install :
  
@@ -41,12 +41,12 @@ pipenv install
  
  ```console
     python3 manage.py makemigrations
-    ```
+ ```
     and 
     
-    ```console
+ ```console
     python3 manage.py migrate
-    ```
+ ```
  
  
  

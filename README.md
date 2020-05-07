@@ -20,6 +20,38 @@ pipenv install
 
 5. Use files eg details.pdf/details.doc etc to convey detailed information having tables/images.
 
+6. To store jpeg/jpg/png images in database, install runtime library libjpeg8-dev in terminal by 
+    ```console
+    sudo apt-get install libjpeg8-dev
+    ```
+  and install python imaging library Pillow in terminal by 
+  ```console
+    pip install Pillow
+    ```
+    
+7. To use social authentication for login, in terminal, install :
+ 
+ ```console
+ pip install python-social-auth[django]
+ ```
+ Also, register your app on Google Developer Console here : https://console.developers.google.com
+ and after setup the Django-App, you will get the OAuth 2.0 Client ID and Secret Key which you need to write in settings.py     file.
+ 
+ 8. Before starting the project, Do all migrations in terminal by:
+ 
+ ```console
+    python3 manage.py makemigrations
+    ```
+    and 
+    
+    ```console
+    python3 manage.py migrate
+    ```
+ 
+ 
+ 
+ 
+
 ## Objective:
 To create a web application which can perform following important task:
 - User and Admin login

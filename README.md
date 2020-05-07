@@ -25,28 +25,28 @@ pipenv install
     sudo apt-get install libjpeg8-dev
     ```
   and install python imaging library Pillow in terminal by 
-  ```console
-    pip install Pillow
-  ```
+    ```console
+      pip install Pillow
+    ```
     
 7. To use social authentication for login, in terminal, install :
  
- ```console
- pip install python-social-auth[django]
- ```
+    ```console
+        pip install python-social-auth[django]
+    ```
  Also, register your app on Google Developer Console here : https://console.developers.google.com
  and after setup the Django-App, you will get the OAuth 2.0 Client ID and Secret Key which you need to write in settings.py     file.
  
  8. Before starting the project, Do all migrations in terminal by:
  
- ```console
-    python3 manage.py makemigrations
- ```
-    and 
+    ```console
+         python3 manage.py makemigrations
+    ```
+    and then
     
- ```console
-    python3 manage.py migrate
- ```
+    ```console
+        python3 manage.py migrate
+    ```
  
  
  

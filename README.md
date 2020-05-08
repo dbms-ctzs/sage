@@ -24,9 +24,9 @@ pipenv install
     ```console
     sudo apt-get install libjpeg8-dev
     ```
-  and install python imaging library Pillow in terminal by 
-    ```console
-      pip install Pillow
+  and install python imaging library Pillow in terminal by  
+    ``` 
+     pip install Pillow
     ```
     
 7. To use social authentication for login, in terminal, install :

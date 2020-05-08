@@ -65,6 +65,16 @@
 											</label>
 										</div>
 										<button class="btn btn-lg btn-primary btn-block" value="Login" type="submit">Login</button>
+                                        <hr>
+                                        <p>-- OR --</p>
+                                        <a href="{% url 'social:begin' 'github' %}">
+                                        <button type="button" name="button" class="btn btn-primary">Github</button>
+                                        </a>
+                                        <a href="{% url 'social:begin' 'google-oauth2' %}">
+                                        <button type="button" name="button" class="btn btn-danger">Google+</button>
+                                        </a>
+
+
 									</form>
 								</div>
 							</div>
@@ -92,7 +102,7 @@
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script>window.jQuery || document.write('<script src="{% static 'bootstrap/assets/js/vendor/jquery-slim.min.js' %}"><\/script>')</script>
+		<script>window.jQuery || document.write('<script src="{% static "bootstrap/assets/js/vendor/jquery-slim.min.js" %}"><\/script>')</script>
 		<script src="{% static 'bootstrap/assets/js/vendor/popper.min.js' %}"></script>
 		<script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
 	</body>

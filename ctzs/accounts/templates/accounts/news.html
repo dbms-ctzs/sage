@@ -1,0 +1,55 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="{% static 'images/bulb-icon.png' %}">
+
+		<title>sage: citizen science project</title>
+		<!-- Bootstrap core CSS -->
+		<link href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Custom styles for this template -->
+		<!-- 
+		<link href="{% static 'css/cover.css' %}" rel="stylesheet">
+		-->
+	</head>
+
+	<body class="text-center">
+
+		<div >
+			<div class="card">
+				<div id="newscontent" class="card-body text-center">
+						Loading...
+				</div>
+			 </div>	
+	
+			<button type="button" class="btn btn-primary" id="ajaxSubmit">Fetch News</button>
+		</div>
+
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script>window.jQuery || document.write('<script src="{% static "bootstrap/assets/js/vendor/jquery-slim.min.js" %}"><\/script>')</script>
+		<script src="{% static 'bootstrap/assets/js/vendor/popper.min.js' %}"></script>
+		<script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
+		
+		<script>
+			$('#ajaxSubmit').click(
+				function(){
+					console.log("clicked")
+					$.ajax({
+							url: "/grabnews/",
+							cache: false,
+							success: function(html){
+							$("#newscontent").html(html);
+							}
+					});
+			});
+		</script>
+	</body>
+</html>

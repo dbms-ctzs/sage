@@ -8,6 +8,8 @@ autopep8 = "*"
 
 [packages]
 django = "*"
+pillow = "*"
+python-social-auth = {extras = ["django"],version = "*"}
 
 [requires]
 python_version = "3.7"

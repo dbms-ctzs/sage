@@ -182,8 +182,8 @@ Admin has access to all tables.
 ## TODO
 **(no need to work on authorization to each pages for now, login is only authenticated for now)**
 **(use dummy image and dummy data when dbms query is not involved)**
-1. User Login and registration API (use simple forms for html templates- will be made beautiful later)
-2. Create approproate tables-> models.py
-3. User dashboard: show news and and take response of Fake/Real with some remarks. Use AJAX call to fetch news from server and show it to the user.
+1. Integration of web scraping and store in database
+2. Fetch news article from database
+3. Integrate ML API to news data
 4. User Ranking profile.
 5. User profile

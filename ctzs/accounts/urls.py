@@ -7,12 +7,12 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('register/', views.registerPage, name="register"),
+    path('aboutus/', views.aboutus, name="aboutus"),
     path('login/', views.loginPage, name="login"),
     path('logout/', views.logoutUser, name="logout"),
     path('', views.home, name="home"),
     path("profile/", views.profile, name="profile"), #profile view~subrat
-    path("news/", views.news, name="news"), # news AJAX request
-    path("grabnews/", views.grabnews, name="grabnews"), # news AJAX request
+    path("grabnews/", views.grabnews, name="grabnews"), # grab news for the dashboard
     url('sage/', views.sage, name="sage"),
     
 ]

@@ -62,6 +62,8 @@ def loginPage(request):
     context={}
     return render(request,'accounts/login.html',context)
 
+def aboutus(request):
+    return render(request,'accounts/aboutus.html')
 
 # Logout page
 def logoutUser(request):
@@ -121,10 +123,8 @@ def profile(request):
 
 # Display news using AJAX
 #@login_required(login_url='login', redirect_field_name=None)
-def news(request):
-    return render(request, "accounts/news.html")
 
 def grabnews(request):
-    data = "New Grabber is Working"
+    data = "Maharashtra reports 9,518 new cases, biggest single-day jump so far"
     html = "<p>%s.</p>" % data
     return HttpResponse(html)

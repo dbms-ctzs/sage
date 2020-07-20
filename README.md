@@ -1,7 +1,7 @@
 # sage
 #### Web Development Project on Citizen Science.<br>Ankit | Anas | Subrat
 
-## Instruction(towards becoming pseudo-professional)
+## Instruction
 0. Clone this repo using git clone and push updates at the end of a day..
 
 1. Install pipenv which will be used later when deployoing. pipenv creates a pipfile which locks dependencies, used for deployment in webserver.
@@ -18,9 +18,9 @@ pipenv install
 ```
 4. Inform other for any push. If on slack you will receive automatic update
 
-5. Use files eg details.pdf/details.doc etc to convey detailed information having tables/images.
+## Dependencies(In case of error only. pipenv will handle all dependencies from pip.lock file)
 
-6. To store jpeg/jpg/png images in database, install runtime library libjpeg8-dev in terminal by 
+1. To store jpeg/jpg/png images in database, install runtime library libjpeg8-dev in terminal by 
     ```console
     sudo apt-get install libjpeg8-dev
     ```
@@ -30,7 +30,7 @@ pipenv install
       pip install Pillow  
      ```
     
-7. To use social authentication for login, in terminal, install :
+2. To use social authentication for login, in terminal, install :
  
     ```console
         pip install python-social-auth[django]
@@ -40,7 +40,7 @@ pipenv install
 
  
  
- 8. Before starting the project, Do all migrations in terminal by:
+3. Before starting the project, Do all migrations in terminal by:
  
     ```console
          python3 manage.py makemigrations
@@ -50,7 +50,7 @@ pipenv install
     ```console
         python3 manage.py migrate
     ```
-9. In Terminal, run commands:
+4. Few other dependencies for Machine Learning Algorithms:
    
    ```
       pip install flask  
@@ -77,7 +77,7 @@ pipenv install
        python3 -c "import nltk; nltk.download('punkt')" 
     ```
     
-    
+  ## Machine Learning Dataset Information  
     --------------------------------------------------------------------------------
     
     The dataset we will use for the fake news detection is called as "news.csv". This dataset has 7796. rows and 4 columns/ The first column identifies the news, the second and third are the title and text, and the fourth column has labels denoting whether the news is REAL or FAKE. The dataset can be downloaded from https://drive.google.com/file/d/1er9NJTLUA3qnRuyhfzuN0XUsoIC4a-_q/view
@@ -91,9 +91,9 @@ pipenv install
      ```
 This would create a serialized version of our model into a file model.pkl
  
- ## Exectution of commands:   
+ ## Exectution of Commands for ML Algorithm:   
  
-  1) For UI   
+ 1) For UI   
     ```
       python manage.py runserver  
     ```
@@ -125,17 +125,15 @@ To create a web application which can perform following important task:
      - ctzs //project info file
      - manage.py
      - account //authentication
-     - dashboard //dashboard
 
 ## Frontend:
-1. **Logo and Name**
-2. **Homepage**: 
+1. **Homepage**: 
      - Navbar
      - Text which will give user an idea of project.
      - Login
      - Tutorials of how to help
      - About us
-3. **Users Dashboard:**  
+2. **Users Dashboard:**  
     - Show news for classifying.
     - Number of Submissions.
     - User profile Details.

@@ -78,9 +78,7 @@ pipenv install
     ```
     
   ## Machine Learning Dataset Information  
-    --------------------------------------------------------------------------------
-    
-    The dataset we will use for the fake news detection is called as "news.csv". This dataset has 7796. rows and 4 columns/ The first column identifies the news, the second and third are the title and text, and the fourth column has labels denoting whether the news is REAL or FAKE. The dataset can be downloaded from https://drive.google.com/file/d/1er9NJTLUA3qnRuyhfzuN0XUsoIC4a-_q/view
+The dataset we will use for the fake news detection is called as "news.csv". This dataset has 7796. rows and 4 columns/ The first column identifies the news, the second and third are the title and text, and the fourth column has labels denoting whether the news is REAL or FAKE. The dataset can be downloaded from https://drive.google.com/file/d/1er9NJTLUA3qnRuyhfzuN0XUsoIC4a-_q/view
  
  -- Here, "app.py" file contains Flask APIs that receives news url through GUI or API calls, extracts the article from the url, feeds it to the model and returns the prediction.
  

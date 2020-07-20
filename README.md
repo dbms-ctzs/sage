@@ -20,6 +20,95 @@ pipenv install
 
 5. Use files eg details.pdf/details.doc etc to convey detailed information having tables/images.
 
+6. To store jpeg/jpg/png images in database, install runtime library libjpeg8-dev in terminal by 
+    ```console
+    sudo apt-get install libjpeg8-dev
+    ```
+  and install python imaging library Pillow in terminal by    
+    
+     ```
+      pip install Pillow  
+     ```
+    
+7. To use social authentication for login, in terminal, install :
+ 
+    ```console
+        pip install python-social-auth[django]
+    ```
+ Also, register your app on Google Developer Console here : https://console.developers.google.com
+ and after setup the Django-App, you will get the OAuth 2.0 Client ID and Secret Key which you need to write in settings.py     file.
+
+ 
+ 
+ 8. Before starting the project, Do all migrations in terminal by:
+ 
+    ```console
+         python3 manage.py makemigrations
+    ```
+    and then
+    
+    ```console
+        python3 manage.py migrate
+    ```
+9. In Terminal, run commands:
+   
+   ```
+      pip install flask  
+    ```
+    ```
+      pip install flask_cors  
+    ```
+    ```
+      pip install joblib  
+    ```
+    ```
+      pip install sklearn.externals  
+    ```
+    ```
+      pip install newspaper  
+    ```
+    ```
+      pip install newspaper3k  
+    ```
+    ```
+       python3 -c "import nltk; nltk.download('all')" 
+    ```
+    ```
+       python3 -c "import nltk; nltk.download('punkt')" 
+    ```
+    
+    
+    --------------------------------------------------------------------------------
+    
+    The dataset we will use for the fake news detection is called as "news.csv". This dataset has 7796. rows and 4 columns/ The first column identifies the news, the second and third are the title and text, and the fourth column has labels denoting whether the news is REAL or FAKE. The dataset can be downloaded from https://drive.google.com/file/d/1er9NJTLUA3qnRuyhfzuN0XUsoIC4a-_q/view
+ 
+ -- Here, "app.py" file contains Flask APIs that receives news url through GUI or API calls, extracts the article from the url, feeds it to the model and returns the prediction.
+ 
+ -- "fake_news_detection.py" contains code for our Machine Learning model to classify the news whether it is real or fake.
+ 
+ -- Create the machine learning model by running below command -
+     ```python fake_news_detection.py
+     ```
+This would create a serialized version of our model into a file model.pkl
+ 
+ ## Exectution of commands:   
+ 
+  1) For UI   
+    ```
+      python manage.py runserver  
+    ```
+         
+  Open the link url shown in terminal        
+      
+ 2) For News Prediction   
+    ```
+      python app.py  
+    ```
+         
+  Open the link url shown in terminal        
+           
+      
+
 ## Objective:
 To create a web application which can perform following important task:
 - User and Admin login

@@ -118,3 +118,13 @@ def profile(request):
     return render(request, "accounts/profile.html", {
         "data": profiledata,
     })
+
+# Display news using AJAX
+#@login_required(login_url='login', redirect_field_name=None)
+def news(request):
+    return render(request, "accounts/news.html")
+
+def grabnews(request):
+    data = "New Grabber is Working"
+    html = "<p>%s.</p>" % data
+    return HttpResponse(html)

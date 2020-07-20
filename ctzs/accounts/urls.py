@@ -11,6 +11,8 @@ urlpatterns = [
     path('logout/', views.logoutUser, name="logout"),
     path('', views.home, name="home"),
     path("profile/", views.profile, name="profile"), #profile view~subrat
+    path("news/", views.news, name="news"), # news AJAX request
+    path("grabnews/", views.grabnews, name="grabnews"), # news AJAX request
     url('sage/', views.sage, name="sage"),
     
 ]

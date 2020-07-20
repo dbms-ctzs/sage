@@ -155,3 +155,11 @@ SOCIAL_AUTH_GITHUB_SECRET = 'a1cb82b8dd077033b8ba3ebcca43511b17bf67c8'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+
+MIDDLEWARE_CLASSES = (
+    # Simplified static file serving.
+    # https://warehouse.python.org/project/whitenoise/
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+)
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

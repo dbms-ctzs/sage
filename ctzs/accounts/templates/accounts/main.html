@@ -48,6 +48,33 @@
 			});
 		</script>
 
+		<script>
+			$('#ajaxreal').click(
+				function(){
+					console.log("clicked")
+					$.ajax({
+							url: "/grabnews/",
+							cache: false,
+							success: function(html){
+							$("#newscontent").html(html);
+							}
+					});
+			});
+		</script>
+
+		<script>
+			$('#ajaxfake').click(
+				function(){
+					console.log("clicked")
+					$.ajax({
+							url: "/grabnews/",
+							cache: false,
+							success: function(html){
+							$("#newscontent").html(html);
+							}
+					});
+			});
+		</script>
 
     </body>
 

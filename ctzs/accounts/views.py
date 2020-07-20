@@ -13,7 +13,7 @@ from django.contrib.auth.decorators import login_required
 from .decorators import unauthenticated_user,allowed_users
 
 
-
+import pandas as pd
 
 
 from .models import Profile, Comment
@@ -121,10 +121,13 @@ def profile(request):
         "data": profiledata,
     })
 
-# Display news using AJAX
-#@login_required(login_url='login', redirect_field_name=None)
-
+# Fetch news from the database: csv file will be read and news will be fetched randmly
+raw_news = pd.read_csv("static/news_temp.csv")
+@login_required(login_url='login', redirect_field_name=None)
 def grabnews(request):
-    data = "Maharashtra reports 9,518 new cases, biggest single-day jump so far"
-    html = "<p>%s.</p>" % data
+    news_data = raw_news.sample(1)
+    news_data = news_data.iloc[0]
+    news_title = news_data.title
+    news_summary = news_data.summary
+    html = "<p><h5>%s</h5> <br> %s</p>" % (news_title, news_summary)
     return HttpResponse(html)

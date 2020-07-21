@@ -78,8 +78,8 @@ To create a web application which can perform following important task:
      - manage.py //to run application
      - account
      - app.py //for ML Algorithm
--webscrapping
--screenshots
+- webscrapping
+- project_snapshots
 
 ## Frontend:
 1. **Homepage**: 

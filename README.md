@@ -14,11 +14,15 @@
     ```console
     pipenv shell
     ```
-3. Install dependencies: Pipfile has been updated sp run following:
+3. Install dependencies: Pipfile/requirements.txt has been updated so run ANY ONE command of following:
     ```console
     pipenv install
+    pip install -r requirements.txt
     ```
-4. Inform other for any push. If on slack you will receive automatic update
+4. The folder 'ctzs' is the project folder. Run everything from that directory
+    ```console
+    cd ctzs
+    ```
 
 ## Dependencies: (In case of error only) as pipenv will handle all dependencies from 'pip.lock' file.
 0. Install dependencies using file 'requirements.txt'
@@ -53,11 +57,13 @@
  
  1) For user interface, run following command and open the link url shown in terminal(127.0.0.1):
     ```console
+    cd ctzs
     python manage.py runserver  
     ```       
       
  2) For news prediction involving Machine-Learning algorithm:   
     ```console
+    cd ctzs
     python app.py  
     ```  
       
